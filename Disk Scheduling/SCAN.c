@@ -3,21 +3,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX_REQUESTS 100
 
 int main()
 {
-	int seekTime, total_seek_time = 0, n, requests[MAX_REQUESTS], currentTrack = 0, direction = 1;
+	int seekTime, total_seek_time = 0, n, currentTrack = 0, direction = 1;
 	printf("SCAN Disk Scheduling\n");
 	printf("Enter the number of requests: ");
 	scanf("%d", &n);
-	
-	//Checking whether out of bounds
-	if (n <= 0 || n > MAX_REQUESTS)
-	{
-		printf("Invalid input.\n");
-		return 1;
-	}
+	int requests[n];
 	
 	//Request input
 	printf("Enter requests:\n");
