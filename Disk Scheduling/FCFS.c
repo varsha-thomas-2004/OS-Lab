@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX_REQUESTS 100
 
 int main()
 {
