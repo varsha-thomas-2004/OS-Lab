@@ -7,17 +7,11 @@
 
 int main()
 {
-	int seekTime, total_seek_time = 0, currentTrack = 0, requests[MAX_REQUESTS], n;
+	int seekTime, total_seek_time = 0, currentTrack = 0, n;
 	printf("FCFS Disk Scheduling\n");
 	printf("Enter the number of requests: ");
 	scanf("%d", &n);
-	
-	//Checking whether out of bounds
-	if (n <= 0 || n > MAX_REQUESTS)
-	{
-		printf("Invalid input.\n");
-		return 1;
-	}
+	int requests[n];
 	
 	//Request input
 	printf("Enter requests:\n");
