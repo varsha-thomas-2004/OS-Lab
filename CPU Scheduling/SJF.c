@@ -1,7 +1,7 @@
 //CPU Scheduling Algorithms
 //SJF - Shortest Job First
 //Non Preemptive
-//Arrival Time of sll processes taken as 0
+//Arrival Time of all processes taken as 0
 
 #include <stdio.h>
 
