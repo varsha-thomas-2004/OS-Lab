@@ -6,10 +6,11 @@
 
 int main()
 {
-	int n, seekTime, total_seek_time = 0, currentTrack = 0, requests[MAX_REQUESTS], temp, direction = 1;
+	int n, seekTime, total_seek_time = 0, currentTrack = 0, temp, direction = 1;
 	printf("C-SCAN Disk Scheduling\n");
 	printf("Enter the number of requests: ");
 	scanf("%d", &n);
+	int requests[n];
 	
 	//Request Input
 	printf("Enter requests:\n");
