@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX_REQUESTS 100
 
 int main()
 {
@@ -12,19 +11,10 @@ int main()
 	printf("Enter the number of requests: ");
 	scanf("%d", &n);
 	
-	//Checking whether out of bounds
-	if (n <= 0 || n > MAX_REQUESTS)
-	{
-		printf("Invalid input\n");
-		return 1;
-	}
-	
 	//Request Input
 	printf("Enter requests:\n");
 	for (int i = 0; i < n; i++)
-	{
 		scanf("%d", &requests[i]);
-	}
 	
 	//Sort
 	for (int i = 0; i < n - 1; i++)
@@ -47,7 +37,6 @@ int main()
 		{
 			if (currentTrack == requests[i])
 			{
-				seekTime += abs(currentTrack - requests[i]);
 				requests[i] = -1;
 				break;
 			}
