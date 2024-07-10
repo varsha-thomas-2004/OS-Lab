@@ -15,7 +15,21 @@ int main()
 	//Request input
 	printf("Enter requests:\n");
 	for (int i = 0; i < n; i++)
-		scanf("%d", &requests[i]);
+		scanf("%d", &requests[I]);
+
+	//Sort
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = 0; j < n - i - 1; j++)
+		{
+			if (requests[j] > requests[j + 1])
+			{
+				temp = requests[j];
+				requests[j] = requests[j + 1];
+				requests[j + 1] = temp;
+			}
+		}
+	}
 	
 	//Calculating Seek Time
 	for (int i = 0; i < n; i++)
