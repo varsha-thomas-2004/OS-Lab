@@ -6,7 +6,7 @@
 
 int main()
 {
-	int total_seek_time = 0, n, currentTrack = 0, direction = 1;
+	int total_seek_time = 0, n, currentTrack = 0, direction = 1, temp;
 	printf("SCAN Disk Scheduling\n");
 	printf("Enter the number of requests: ");
 	scanf("%d", &n);
@@ -15,7 +15,7 @@ int main()
 	//Request input
 	printf("Enter requests:\n");
 	for (int i = 0; i < n; i++)
-		scanf("%d", &requests[I]);
+		scanf("%d", &requests[i]);
 
 	//Sort
 	for (int i = 0; i < n - 1; i++)
